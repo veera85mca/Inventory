@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Inventory">
+<listeners>
+<listener class-name="com.pellu.invent.screenshot.Generatereports"/>
+</listeners>
+  <test name="Itemsmastertest">
+    <classes>
+      <class name="com.pellu.invent.item.Itemmastertest">
+      	<parameter name="Username" value="minv@hos.in"/>
+		<parameter name="Password" value="password"/>
+      <methods>
+      <include name="invenlogin"/>
+      <include name="frameitem"/>
+      <exclude name="IOLitem"/>
+      <include name="Spectacleitem"/>
+      <include name="Fixedassetitem"/>
+      <include name="Contactlensitem"/>
+      <include name="Sunglassitem"/>
+      <include name="Othersitem"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Inventory]">
+  <listeners>
+    <listener class-name="com.pellu.invent.screenshot.Generatereports"/>
+  </listeners>
+  <test name="Itemsmastertest(failed)">
+    <classes>
+      <class name="com.pellu.invent.item.Itemmastertest">
+        <parameter name="Username" value="minv@hos.in"/>
+        <parameter name="Password" value="password"/>
+        <methods>
+          <include name="frameitem" invocation-numbers="0 1"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.pellu.invent.item.Itemmastertest -->
+    </classes>
+  </test> <!-- Itemsmastertest(failed) -->
+</suite> <!-- Failed suite [Inventory] -->

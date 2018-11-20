@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Inventory">
+              <span class="suite-name border-failed">Inventory</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Inventory">
+                    <span>C:\Seleniumwork\workspace\Inventory\Itemmaster.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Inventory">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Inventory">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Inventory">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Inventory">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Inventory">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Inventory">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Inventory" class="hide-methods failed suite-Inventory"> (hide)</a> <!-- hide-methods failed suite-Inventory -->
+                      <a href="#" panel-name="suite-Inventory" class="show-methods failed suite-Inventory"> (show)</a> <!-- show-methods failed suite-Inventory -->
+                    </span>
+                    <div class="method-list-content failed suite-Inventory">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Inventory" title="com.pellu.invent.item.Itemmastertest" hash-for-method="frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)">frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Inventory" title="com.pellu.invent.item.Itemmastertest" hash-for-method="frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)">frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Inventory -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Inventory" class="hide-methods passed suite-Inventory"> (hide)</a> <!-- hide-methods passed suite-Inventory -->
+                      <a href="#" panel-name="suite-Inventory" class="show-methods passed suite-Inventory"> (show)</a> <!-- show-methods passed suite-Inventory -->
+                    </span>
+                    <div class="method-list-content passed suite-Inventory">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Inventory" title="com.pellu.invent.item.Itemmastertest" hash-for-method="invenlogin(minv@hos.in, password)">invenlogin(minv@hos.in, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Inventory -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Inventory" class="panel Inventory">
+          <div class="suite-Inventory-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.pellu.invent.item.Itemmastertest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)">
+                  </a> <!-- frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...) -->
+                  <span class="method-name">frameitem</span>
+                  <span class="parameters">({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has Components=Yes, Name=Veera, FRAME BRAND=DKNY, Print Name=Veerapathiran, Preferred Supplier=TAILANBAN SUPPLIER, Is Narcotic=Yes, Pricing Mode=Fixed Rate, Batch Entry Mode=Optional, Charge Category=Consumable, PO/GR Process=Yes, SubUnit=Pack,Carton,Bottle,Strip,Bottle,Strip, Buying Unit=Pack, Is OTC=Yes, FRAME SIZE=KIDS (6-10), SubQuantity=5,6,2,4,5,6, Reorder Level=10, HSN=SDV123, Default Purchase Qty=34, FRAME METAL=PLASTIC, FRAME SHAPE=BUTTERFLY, Quantity=10, Code=ADF002, Item info=Frame, Selling Unit=Pack, Expiry Format=dd/mm/yyyy, Has Attributes=Yes, FRAME TYPE=RIMLESS, Expiry Date=No})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;input type=&quot;text&quot; id=&quot;Txt_WeightAge10&quot; class=&quot;&quot; onkeydown=&quot;return validatecontactno(event);&quot;&gt; is not clickable at point (934, 514). Other element would receive the click: &lt;div class=&quot;modal fade in&quot; id=&quot;basic&quot; tabindex=&quot;-1&quot; role=&quot;basic&quot; aria-hidden=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-KPGOHHF&apos;, ip: &apos;192.168.195.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\VEERAP~1\AppData\Local\Temp\scoped_dir12836_17801}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.102, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 32f1943e8ce28ad679df7c1f6013f93c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at com.pellu.invent.itempage.Itemmastertestpage.additem_general_prefersupplier(Itemmastertestpage.java:133)
+	at com.pellu.invent.item.Itemmastertest.Itemmastercommon(Itemmastertest.java:190)
+	at com.pellu.invent.item.Itemmastertest.frameitem(Itemmastertest.java:29)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)">
+                  </a> <!-- frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...) -->
+                  <span class="method-name">frameitem</span>
+                  <span class="parameters">({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has Components=Yes, Name=Veera, FRAME BRAND=DKNY, Print Name=Veerapathiran, Preferred Supplier=TAILANBAN SUPPLIER, Is Narcotic=Yes, Pricing Mode=Fixed Rate, Batch Entry Mode=Optional, Charge Category=Consumable, PO/GR Process=Yes, SubUnit=Pack,Carton,Bottle,Strip,Bottle,Strip, Buying Unit=Pack, Is OTC=Yes, FRAME SIZE=KIDS (6-10), SubQuantity=5,6,2,4,5,6, Reorder Level=10, HSN=SDV123, Default Purchase Qty=34, FRAME METAL=PLASTIC, FRAME SHAPE=BUTTERFLY, Quantity=10, Code=ADF001, Item info=Frame, Selling Unit=Pack, Expiry Format=dd/mm/yyyy, Has Attributes=Yes, FRAME TYPE=RIMLESS, Expiry Date=No})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;input type=&quot;text&quot; id=&quot;ddl_MultiSupplier&quot; readonly=&quot;readonly&quot; class=&quot;form-control&quot; onkeyup=&quot;GetSearchSupplierNames()&quot; placeholder=&quot;Select&quot; autocomplete=&quot;off&quot; style=&quot;padding-left: 11px;margin-bottom: 1%;margin-left: -1%;&quot;&gt; is not clickable at point (842, 389). Other element would receive the click: &lt;div class=&quot;modal-footer&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-KPGOHHF&apos;, ip: &apos;192.168.195.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\VEERAP~1\AppData\Local\Temp\scoped_dir208_19832}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.102, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: f931a9769cf2bb3538b9f138d3c41d3e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at com.pellu.invent.itempage.Itemmastertestpage.additem_general_prefersupplier(Itemmastertestpage.java:125)
+	at com.pellu.invent.item.Itemmastertest.Itemmastercommon(Itemmastertest.java:190)
+	at com.pellu.invent.item.Itemmastertest.frameitem(Itemmastertest.java:29)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Inventory-class-failed -->
+          <div class="suite-Inventory-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pellu.invent.item.Itemmastertest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invenlogin(minv@hos.in, password)">
+                  </a> <!-- invenlogin(minv@hos.in, password) -->
+                  <span class="method-name">invenlogin</span>
+                  <span class="parameters">(minv@hos.in, password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Inventory-class-passed -->
+        </div> <!-- panel Inventory -->
+        <div panel-name="test-xml-Inventory" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Seleniumwork\workspace\Inventory\Itemmaster.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Inventory&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.pellu.invent.screenshot.Generatereports&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Itemsmastertest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pellu.invent.item.Itemmastertest&quot;&gt;
+        &lt;parameter name=&quot;Username&quot; value=&quot;minv@hos.in&quot;/&gt;
+        &lt;parameter name=&quot;Password&quot; value=&quot;password&quot;/&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;invenlogin&quot;/&gt;
+          &lt;include name=&quot;frameitem&quot;/&gt;
+          &lt;exclude name=&quot;IOLitem&quot;/&gt;
+          &lt;exclude name=&quot;Spectacleitem&quot;/&gt;
+          &lt;exclude name=&quot;Fixedassetitem&quot;/&gt;
+          &lt;exclude name=&quot;Contactlensitem&quot;/&gt;
+          &lt;exclude name=&quot;Sunglassitem&quot;/&gt;
+          &lt;exclude name=&quot;Othersitem&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.pellu.invent.item.Itemmastertest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Itemsmastertest --&gt;
+&lt;/suite&gt; &lt;!-- Inventory --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Inventory" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Inventory</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Itemsmastertest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Inventory" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Inventory</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Inventory" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Inventory</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Inventory');
+function tableData_Inventory() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'frameitem')
+data.setCell(0, 2, 'com.pellu.invent.item.Itemmastertest')
+data.setCell(0, 3, 29495);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'frameitem')
+data.setCell(1, 2, 'com.pellu.invent.item.Itemmastertest')
+data.setCell(1, 3, 17008);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invenlogin')
+data.setCell(2, 2, 'com.pellu.invent.item.Itemmastertest')
+data.setCell(2, 3, 201);
+window.suiteTableData['Inventory']= { tableData: data, tableDiv: 'times-div-Inventory'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <div id="times-div-Inventory">
+              </div> <!-- times-div-Inventory -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Inventory" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Inventory</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Inventory" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.pellu.invent.item.Itemmastertest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Othersitem</span>
+                <br/>
+                <span class="ignored-method-name">Contactlensitem</span>
+                <br/>
+                <span class="ignored-method-name">Sunglassitem</span>
+                <br/>
+                <span class="ignored-method-name">Spectacleitem</span>
+                <br/>
+                <span class="ignored-method-name">Fixedassetitem</span>
+                <br/>
+                <span class="ignored-method-name">IOLitem</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Inventory" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pellu.invent.item.Itemmastertest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invenlogin(minv@hos.in, password)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">209 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">44733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">frameitem({Form=Drops, SubItem=COOL,IOL,SEMI,SPECT,SUN,FRAME, Is Schedule H Drug=Yes, Conversion Unit=12, Has ...)</span>
+                <span class="method-start">44790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">82998 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
